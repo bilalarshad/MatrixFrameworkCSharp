@@ -45,6 +45,7 @@
     <Compile Include="Matrix\IMatrixPathOperations.cs" />
     <Compile Include="Matrix\IMatrixToCollection.cs" />
     <Compile Include="Matrix\Matrix.cs" />
+    <Compile Include="Matrix\MatrixPathFinder.cs" />
     <Compile Include="Matrix\RowColumn.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
