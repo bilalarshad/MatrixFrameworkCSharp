@@ -18,6 +18,10 @@ namespace MatrixFramework.Matrix
 
         bool Add(int r, int c, T obj);
 
+        bool SwapRows(int r, int r1);
+
+        bool SwapColumns(int r, int r1);
+
         T ElementAt(int r, int c);
     }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MatrixFramework.Matrix
 {
-    public class Matrix<T> : IBasicOperations<T>, IMatrixCollection<T>, IMatrixPathOperations<T> where T : new()
+    public class Matrix<T> : MatrixPathFinder<T>, IBasicOperations<T>, IMatrixCollection<T> where T : new()
     {
         public Matrix(int Rows, int Columns)
         {
@@ -43,6 +43,7 @@ namespace MatrixFramework.Matrix
 
         public bool Remove(int r, int c)
         {
+            Grid[r, c] = new T();
             return true;
         }
 
@@ -76,26 +77,25 @@ namespace MatrixFramework.Matrix
             return Grid[r, c];
         }
 
-
-        public ICollection<RowColumn> GetShortestPath(int r, int c, int r1, int c1)
-        {
-            throw new NotImplementedException();
-        }
-
-        public ICollection<RowColumn> GetShortestPath(int r, int c, T obj)
-        {
-            throw new NotImplementedException();
-        }
-
-        public ICollection<RowColumn> GetShortestPath(T obj, int r1, int c1)
-        {
-            throw new NotImplementedException();
-        }
-
-
         public T[,] AsArray()
         {
             return Grid;
+        }
+
+        public override bool SetPathFinderCondition()
+        {
+            throw new NotImplementedException();
+        }
+
+
+        public bool SwapRows(int r, int r1)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool SwapColumns(int r, int r1)
+        {
+            throw new NotImplementedException();
         }
     }
 }
