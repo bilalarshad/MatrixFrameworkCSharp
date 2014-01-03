@@ -24,6 +24,7 @@ namespace MatrixFramework
                 }
                 Console.WriteLine("");
             }
+            Console.ReadKey();
         }
 
     }
