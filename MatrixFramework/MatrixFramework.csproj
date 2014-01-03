@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Beem\Matrix\BaseMatrix.cs" />
+    <Compile Include="Beem\Matrix\Dimension.cs" />
+    <Compile Include="Beem\Matrix\IBasicOperations.cs" />
+    <Compile Include="Beem\Matrix\MatrixItem.cs" />
     <Compile Include="Matrix\IBasicOperations.cs" />
     <Compile Include="Matrix\IMatrixPathOperations.cs" />
     <Compile Include="Matrix\IMatrixToCollection.cs" />
